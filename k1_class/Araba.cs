@@ -14,7 +14,12 @@ namespace k1_class
         public string _arabaMarkasi;
         public string _arabaModeli;
         public string _arabaYili;
-        public bool _arabaGaleridemi;
+        public string _arabaGaleridemi;
         
     }
+
+    // OOP'nin encapsulation kuralı doğrultusunda fieldlar sınıf içinde private olarak tanımlanmalıdır.
+    // Property ile fieldara değerleri kontrollü bir şekilde aktarabiliriz ve ya fieldın taşıdığı değeri kullancıyı gönderebiliriz...
+    // Erişim belirleyicisi public olmalıdır.
+    // field ile aynı veri tipinde tanımlanır
 }
