@@ -63,7 +63,7 @@ namespace k1_class
 
         private void cmbTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //cascading drop down iki combo boxı bağlamak için öğreneceğiz.
         }
 
 
@@ -88,6 +88,7 @@ namespace k1_class
 
         private void lstKitaplar_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // if (lstKitaplar.SelectedItem == null)
             if (lstKitaplar.SelectedItem != null) // selectedIndex != -1
             {
                 var secilenEleman = (Kitaplar)lstKitaplar.SelectedItem;
