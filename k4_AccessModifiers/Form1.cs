@@ -34,6 +34,7 @@ namespace k4_AccessModifiers
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            // bu verileri OBS.DATA class'tan aldık. 
             Ogrenci student = new Ogrenci();
             student.Ad = textBox1.Text;
             student.Soyad = textBox3.Text;
@@ -41,6 +42,11 @@ namespace k4_AccessModifiers
 
             ElektronikUrun eu = new ElektronikUrun();
             
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
