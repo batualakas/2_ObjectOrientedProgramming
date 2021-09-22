@@ -63,7 +63,7 @@ namespace k1_class
 
         private void cmbTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //cascading drop down iki combo boxı bağlamak için öğreneceğiz.
         }
 
 
@@ -88,16 +88,24 @@ namespace k1_class
 
         private void lstKitaplar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var secilenEleman = (Kitaplar)lstKitaplar.SelectedItem;
-            txtAdSoyad.Text = secilenEleman.YazarinAdiSoyadi;
-            txtFiyat.Text = secilenEleman.Fiyat.ToString();
-            txtKitapAdı.Text = secilenEleman.KitapAdi;
-            cmbTuru.SelectedItem = secilenEleman.Tur;
-            dtpTarih.Value = secilenEleman.BasimTarihi;
-            txtSayfaSayisi.Text = secilenEleman.SayfaSayisi.ToString();
-            txtYayinevi.Text = secilenEleman.YayinEvi;
-            // Öğrenci kayıt ekranı oluşturmak.
-            
+            // if (lstKitaplar.SelectedItem == null)
+            if (lstKitaplar.SelectedItem != null) // selectedIndex != -1
+            {
+                var secilenEleman = (Kitaplar)lstKitaplar.SelectedItem;
+                txtAdSoyad.Text = secilenEleman.YazarinAdiSoyadi;
+                txtFiyat.Text = secilenEleman.Fiyat.ToString();
+                txtKitapAdı.Text = secilenEleman.KitapAdi;
+                cmbTuru.SelectedItem = secilenEleman.Tur;
+                dtpTarih.Value = secilenEleman.BasimTarihi;
+                txtSayfaSayisi.Text = secilenEleman.SayfaSayisi.ToString();
+                txtYayinevi.Text = secilenEleman.YayinEvi;
+                // Öğrenci kayıt ekranı oluşturmak.
+                
+            }
+            else
+            {
+                MessageBox.Show("bir seçim yapmalısınz");
+            }
             
         }
     }
