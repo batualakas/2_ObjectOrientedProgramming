@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k8_Interface", "k8_Interfac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k9_StaticConst", "k9_StaticConst\k9_StaticConst.csproj", "{99345ED9-27B5-47AE-99CE-C1344791E58F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k10_List", "k10_List\k10_List.csproj", "{854FCBDC-A878-4843-86CE-3D77F4109AFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{99345ED9-27B5-47AE-99CE-C1344791E58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99345ED9-27B5-47AE-99CE-C1344791E58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99345ED9-27B5-47AE-99CE-C1344791E58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854FCBDC-A878-4843-86CE-3D77F4109AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854FCBDC-A878-4843-86CE-3D77F4109AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854FCBDC-A878-4843-86CE-3D77F4109AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854FCBDC-A878-4843-86CE-3D77F4109AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
